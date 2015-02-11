@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/canvas"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" >
+
+        <View
+            android:id="@+id/rect3"
+            android:layout_width="400dip"
+            android:layout_height="150dip"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rect1"
+            android:background="@color/light_gray"
+            android:tag="@color/light_gray" />
+        
+        <View
+            android:id="@+id/rect6"
+            android:layout_width="400dip"
+            android:layout_height="100dip"
+            android:background="@color/dark_green"
+            android:tag="@color/dark_green" />
+
+        <View
+            android:id="@+id/rect4"
+            android:layout_width="200dip"
+            android:layout_height="100dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rect3"
+            android:background="@color/dark_blue"
+            android:tag="@color/dark_blue" />
+
+        <View
+            android:id="@+id/rect1"
+            android:layout_width="230dip"
+            android:layout_height="150dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rect6"
+            android:background="@color/dark_red"
+            android:tag="@color/dark_red" />
+
+        <View
+            android:id="@+id/rect2"
+            android:layout_width="200dip"
+            android:layout_height="150dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rect6"
+            android:background="@color/white"
+            android:tag="@color/white" />
+
+        <View
+            android:id="@+id/rect5"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/rect4"
+            android:layout_toRightOf="@+id/rect4"
+            android:background="@color/dark_purple"
+            android:tag="@color/dark_purple" />
+        
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/black" />
+
+</RelativeLayout>
